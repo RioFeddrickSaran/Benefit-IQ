@@ -53,12 +53,9 @@ nav a:hover{
 
 #hero{
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    gap:2rem;
-    max-width:1200px;
-    margin: 0 auto;
-    padding: 0 2rem;}
+    align-items:center;
+    padding:80px;}
 
 .bt{
     background-color:#2563EB;
@@ -94,6 +91,9 @@ nav a:hover{
     display:flex;
     justify-content:center;
     align-items:center;}
+    
+.hero img{
+    width:100%;}
 
 .hero-title{
     color:#111827;
@@ -101,12 +101,6 @@ nav a:hover{
     font-weight:700;
     margin:20px 0;
     line-height:1.2;}
-
-.hero-right img{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    object-fit: contain;}
 
 .hero-title span{
     color:#2563EB;}
