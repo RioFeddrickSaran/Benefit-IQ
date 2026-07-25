@@ -100,10 +100,12 @@ nav a:hover{
     margin:20px 0;
     line-height:1.2;}
 
-.hero img{
-    width:100%;
-    height:auto;
-    object-fit: contain;}
+.hero-right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
 
 .hero-title span{
     color:#2563EB;}
