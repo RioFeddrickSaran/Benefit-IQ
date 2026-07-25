@@ -55,7 +55,8 @@ nav a:hover{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:80px;}
+    padding:80px;
+    gap:2rem;}
 
 .bt{
     background-color:#2563EB;
