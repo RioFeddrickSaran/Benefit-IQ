@@ -100,7 +100,9 @@ nav a:hover{
     line-height:1.2;}
 
 .hero img{
-    width:550px;}
+    width:100%;
+    max-width:550px;
+    height:auto;}
 
 .hero-title span{
     color:#2563EB;}
