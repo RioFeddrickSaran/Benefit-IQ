@@ -87,11 +87,19 @@ nav a:hover{
     width:50%;}
 
 .hero-right{
-    width:50%;
+    flex:1;
     display:flex;
     justify-content:center;
-    align-items:center;}
-    
+    align-items:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:550px;
+    height:auto;
+}
+
+And on mobile:
 .hero-right img{
     width:100%;}
 
