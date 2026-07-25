@@ -90,18 +90,12 @@ nav a:hover{
     flex:1;
     display:flex;
     justify-content:center;
-    align-items:center;
-}
+    align-items:center;}
 
 .hero-right img{
     width:100%;
     max-width:550px;
-    height:auto;
-}
-
-And on mobile:
-.hero-right img{
-    width:100%;}
+    height:auto;}
 
 .hero-title{
     color:#111827;
