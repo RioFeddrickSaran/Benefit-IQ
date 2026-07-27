@@ -1,3 +1,336 @@
+/* ============================================
+   RESPONSIVE CSS — ADD TO END OF STYLESHEET
+   Mobile-first enhancements via max-width media queries
+   ============================================ */
+
+/* Global safety: prevent horizontal scroll + responsive images */
+html, body{
+  overflow-x:hidden;
+  max-width:100%;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ============================================
+   BREAKPOINT: 1200px and below
+   Reduce large desktop padding
+   ============================================ */
+@media (max-width:1200px){
+
+  header{
+    padding:20px 50px;
+  }
+
+  #hero{
+    padding:60px 50px;
+  }
+
+  #features{
+    padding:60px 50px;
+  }
+
+  .foot{
+    padding:30px 50px;
+  }
+
+}
+
+/* ============================================
+   BREAKPOINT: 992px and below (tablets)
+   Nav wraps, hero stacks, cards wrap to 2-column
+   ============================================ */
+@media (max-width:992px){
+
+  header{
+    padding:18px 30px;
+    flex-wrap:wrap;
+    row-gap:12px;
+  }
+
+  nav{
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+  }
+
+  #hero{
+    flex-direction:column;
+    padding:60px 30px;
+    text-align:center;
+  }
+
+  .hero-left{
+    width:100%;
+  }
+
+  .hero-right{
+    margin-top:40px;
+  }
+
+  .hero-title{
+    font-size:44px;
+  }
+
+  .hero-description{
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  #card{
+    flex-wrap:wrap;
+    margin:30px 10px;
+  }
+
+  .card1, .card2, .card3, .card4{
+    flex:1 1 calc(50% - 30px);
+  }
+
+  #features{
+    padding:60px 30px;
+  }
+
+  .container, .container2{
+    flex-wrap:wrap;
+  }
+
+  .top, .bottom{
+    flex:1 1 calc(50% - 20px);
+  }
+
+  .proc, .str{
+    flex-wrap:wrap;
+  }
+
+  .process, .story{
+    flex:1 1 calc(50% - 20px);
+  }
+
+  .cta h1{
+    font-size:38px;
+  }
+
+  .foot{
+    padding:25px 30px;
+  }
+
+}
+
+/* ============================================
+   BREAKPOINT: 768px and below (mobile)
+   Everything single-column, nav/footer stack
+   ============================================ */
+@media (max-width:768px){
+
+  header{
+    padding:16px 20px;
+    justify-content:center;
+    text-align:center;
+  }
+
+  header h1{
+    font-size:26px;
+  }
+
+  nav{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  #hero{
+    padding:50px 20px;
+  }
+
+  .hero-title{
+    font-size:34px;
+  }
+
+  .hero-description{
+    font-size:16px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    width:100%;
+    gap:14px;
+  }
+
+  .bt, .bt1{
+    width:100%;
+  }
+
+  #card{
+    flex-direction:column;
+    margin:20px 15px;
+    gap:20px;
+  }
+
+  .card1, .card2, .card3, .card4{
+    flex:1 1 100%;
+  }
+
+  #features{
+    padding:50px 20px;
+  }
+
+  .container, .container2{
+    flex-direction:column;
+    gap:0;
+  }
+
+  .top, .bottom{
+    flex:1 1 100%;
+    margin:15px 0;
+  }
+
+  #process h1{
+    font-size:30px;
+    padding:0 20px;
+  }
+
+  .proc, .str{
+    flex-direction:column;
+    padding:15px;
+  }
+
+  .process, .story{
+    flex:1 1 100%;
+  }
+
+  .cta{
+    padding:60px 20px;
+  }
+
+  .cta h1{
+    font-size:30px;
+  }
+
+  .bt2{
+    width:100%;
+  }
+
+  .foot{
+    flex-direction:column;
+    text-align:center;
+    gap:18px;
+    padding:25px 20px;
+  }
+
+  .cont{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  /* Register / Login pages */
+  #regpage{
+    padding:20px;
+  }
+
+  .box{
+    width:100%;
+    max-width:460px;
+    padding:25px 25px;
+  }
+
+}
+
+/* ============================================
+   BREAKPOINT: 576px and below (small phones)
+   Tighter spacing, full-width buttons, smaller type
+   ============================================ */
+@media (max-width:576px){
+
+  header h1{
+    font-size:22px;
+  }
+
+  .hero-title{
+    font-size:28px;
+  }
+
+  .hero-description{
+    font-size:15px;
+  }
+
+  .badge{
+    font-size:12px;
+  }
+
+  #card{
+    margin:15px 10px;
+  }
+
+  .card1, .card2, .card3, .card4{
+    padding:22px;
+  }
+
+  #features h1, .ft h2{
+    font-size:20px;
+  }
+
+  #process h1{
+    font-size:24px;
+  }
+
+  #process h2{
+    margin:20px;
+    font-size:13px;
+  }
+
+  .process h3, .story h3{
+    font-size:18px;
+  }
+
+  .process p, .story p{
+    font-size:14px;
+  }
+
+  .cta h1{
+    font-size:24px;
+  }
+
+  .cta h3{
+    font-size:14px;
+  }
+
+  .foot{
+    padding:20px 15px;
+  }
+
+  /* Register / Login pages */
+  .box{
+    padding:20px 18px;
+    border-radius:14px;
+  }
+
+  .logo img{
+    width:48px;
+    height:32px;
+  }
+
+  .logo h1{
+    font-size:20px;
+  }
+
+  #form input[type="text"],
+  #form input[type="email"],
+  #form input[type="password"]{
+    font-size:16px; /* prevents iOS zoom on focus */
+    padding:10px 12px;
+  }
+
+  #form button{
+    padding:13px;
+  }}
+
 body{
     margin:0;
     padding:0;
